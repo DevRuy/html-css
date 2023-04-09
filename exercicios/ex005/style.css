@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(32, 32, 32);
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+img {
+    margin: auto;
+    display: block;
+
+}
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+a{
+    text-align: center;
+    color: azure;
+    
+}
+
+img:hover{
+    margin: auto;
+    size: 450px;
+}
+
+p{
+    text-align: center;
+}
+
+button{
+    margin: auto;
+    display: block;
+}
+
+div{
+    background-color: aqua;
+    margin: auto;
+    display: block;
+    height: 350px;
+    width: 200px;
+}
+

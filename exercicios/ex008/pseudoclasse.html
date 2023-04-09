@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            
+            background-color: #F2E3D5;
+        }
+        div{
+            display: inline-block;
+            background-image: linear-gradient(#026773,#024959);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-image: linear-gradient(#036980,#027c8a);
+        }
+
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <form action="hover.html" method="get">
+        <input type="submit" value="Próxima Página">
+    </form>
+    <form action="links.html" method="get">
+        <input type="submit" value="Página Links">
+    </form>
+</body>
+</html>
