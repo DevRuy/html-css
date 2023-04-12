@@ -5,144 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Tabela</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            height: 97vh;
-            width: 97vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(49, 81, 95), rgb(122, 164, 182));
-        }
-
-        h1{
-            font-family: 'Bebas Neue', cursive;
-            font-weight: normal;
-            color: white;
-            text-shadow: 2px 2px 0px black;
-            font-size: 5em;
-            position: absolute;
-            text-align: center;
-
-            width: 600px;
-
-
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        div#tabela{
-            position: absolute;
-            
-            border:5px solid rgb(43, 43, 43);
-            border-radius: 8px;
-            
-            width: 600px;
-            height: 258px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        table{
-            position: absolute;
-            background-color: rgb(247, 247, 247);
-            background-size: 100% 100%;  
-
-            width: 600px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-            text-align: center;
-            font-weight: bolder;
-
-            border-collapse: collapse;
-            
-
-            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
-            
-        }
-
-        td{
-            padding: 15px;
-            
-            border:3.4px solid rgb(43, 43, 43);
-            border-radius: 10px;
-        }
-
-        td:hover{
-            background-color: rgb(230, 230, 230);
-            
-        }
-        /*
-        div#tabela{
-            position: absolute;
-            
-            border:8px solid rgb(43, 43, 43);
-            border-radius: 6px;
-            width: 600px;
-        }
-        
-        table{
-            position: absolute;
-            background-color: rgb(247, 247, 247);
-            background-size: 100% 100%;  
-
-            width: 600px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-            text-align: center;
-            font-weight: bolder;
-
-            border-collapse: collapse;
-            
-
-            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
-            
-        }*/
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Desafio Tabela</h1>
 
-    <div id="tabela">
-        <table>
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
-            </tr>
-            <tr>
-            <td>5</td>
-            <td>6</td>
-            <td colspan="3">7</td>
-            </tr>
-            <tr>
-                <td colspan="3">8</td>
-                <td>9</td>
-            </tr>
-            <tr>
-            <td rowspan="2">10</td>
-            <td colspan="2">11</td>
-            <td>12</td>
-            </tr>
-            <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            </tr>
+    <div id="container">
+        <div id="tabela">
+            <table>
+                <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td>6</td>
+                <td colspan="3">7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+                </tr>
+                <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                </tr>
         
-        </table>
+            </table>
+        </div>
+        <div id="tabela2">
+            <table>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabela3">
+            <table>
+                 <thead class="destaque">
+                    <tr>
+                        <th rowspan="2" scope="col">Área</th>
+                        <th rowspan="2" scope="col">Disciplinas</th>
+                        <th colspan="2" scope="colgroup">Notas</th>
+                        <th rowspan="2" scope="col">Média</th>
+                        <tr>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                        </tr>
+        
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <th rowspan="4" scope="rowgroup">Exatas</th>
+                        <th scope="row">Matemática</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Física</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Química</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Biologia</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="destaque">
+                        <th colspan="4" scope="col">Média de Exatas</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="col">Humanas</th>
+                        <th scope="row">História</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Geografia</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="destaque">
+                        <th colspan="4" scope="row">Media de Humanas</th>
+                        <td>0</td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
     </div>
     
 </body>

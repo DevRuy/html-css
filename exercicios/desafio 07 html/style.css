@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --fundo:#F4E2DE;
+    --borda: #D94F04;
+    --cor1: #007172;
+    --cor2: #025259;
+    --cor3: #F29325;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 97vh;
+    width: 97vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--cor1);
+    text-shadow: 2px 2px 0px #013c3d;
+    font-size: 5em;
+    position: absolute;
+    text-align: center;
+    
+
+    width: 600px;
+
+
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#tabela{
+    position: absolute;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    border:5px solid rgb(43, 43, 43);
+    border-radius: 8px;
+    
+    width: 600px;
+    height: 258px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
+
+
+}
+
+div#tabela > table{
+    position: absolute;
+    background-color: var(--cor2);
+
+    width: 600px;
+    height: 258px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+
+    border-collapse: collapse;
+    
+
+    
+}
+
+div#tabela2{
+    margin-top: 600px;
+    position: absolute;
+    
+    border:5px solid rgb(43, 43, 43);
+    border-radius: 8px;
+    
+    width: 600px;
+    height: 258px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
+
+
+
+}
+
+div#tabela2 > table{
+    position: absolute;
+    
+    background-color: var(--cor2);
+
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+
+    border-collapse: collapse;
+    
+
+    
+}
+
+td{
+    padding: 15px;
+    
+    border:3.4px solid rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+body td:hover{
+    background-color: var(--cor3);
+    
+}
+
+
+body th:hover{
+    background-color: var(--borda);
+}
+
+
+
+div#tabela3{
+    position: absolute;
+    margin-top: 1200px;
+    
+    
+    border:5px solid rgb(43, 43, 43);
+    border-radius: 8px;
+    
+    width: 600px;
+    height: 509px;
+
+    top: 114.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    
+
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
+
+
+}
+
+div#tabela3 > table{
+    position: absolute;
+    background-color: var(--cor2);
+
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+
+    border-collapse: collapse;
+    
+}
+
+#tabela3 th{
+    padding: 15px;
+    
+    border:3.4px solid rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+thead.destaque, tr.destaque{
+    background-color: var(--cor1);
+}
+
+
+#container{
+    overflow: auto;
+}
+
+
+
+
+/*
+div#tabela{
+    position: absolute;
+    
+    border:8px solid rgb(43, 43, 43);
+    border-radius: 6px;
+    width: 600px;
+}
+
+table{
+    position: absolute;
+    background-color: rgb(247, 247, 247);
+    background-size: 100% 100%;  
+
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    font-weight: bolder;
+
+    border-collapse: collapse;
+    
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.349)
+    
+}*/
