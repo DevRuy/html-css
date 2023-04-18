@@ -13,8 +13,14 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
    
-body {
+html,body {
+    display: grid;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -27,12 +33,12 @@ body {
 
 main{
     position: relative;
-    height: 550px;
+    height: 610px;
     width: 350px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid var(--cor-borda)
+    border: 1px solid var(--cor-borda);
 
 }
 
@@ -141,7 +147,7 @@ span#or{
 form{
     display: grid;
     position: absolute;
-    top: 68%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -161,6 +167,11 @@ input.texto{
     
 }
 
+input.texto:active{
+    border: 1px solid #fdfdfd4b;
+    
+}
+
 form > p{
     margin: 10px 0  ;
     font-family: var(--font-escritas);
@@ -173,21 +184,109 @@ form > p{
 a{
     text-decoration: none;
     font-weight: bolder;
-    color: #1b1f31;
+    color: rgb(0, 55, 107);
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(7, 76, 141);
+    
 }
 
 input#signup{
     border: none;
     border-radius: 15px;
+    background-color:  rgb(0, 149, 246);
     
     font-family: var(--font-escritas);
     font-weight: 600;
     color: white;
 
-    padding: 4px 55px 8px 55px;
+    padding: 4px 115px 8px 115px;
     margin: 15px auto;
     border: none;
     border-radius: 10px;
 
     cursor: pointer;
 }
+
+input#signup:hover{
+    border: none;
+    border-radius: 15px;
+    background-color:  rgb(0, 123, 206);;
+    
+    font-family: var(--font-escritas);
+    font-weight: 600;
+    color: white;
+
+    padding: 4px 115px 8px 115px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+aside{
+    margin-top: 10px;
+    
+    position: relative;
+    height: 60px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--cor-borda)
+}
+
+aside > p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+aside > p > a{
+    color: rgb(0, 123, 206);
+}
+
+aside > p > a:hover{
+    color: rgb(0, 123, 206);
+}
+
+
+footer{
+    padding: 100px 0 80px 0;
+    justify-content: center ;
+    display: flex;
+    
+}
+
+footer > p{
+    margin: 0 7px;
+    text-align: center;
+    font-size: 0.7em;
+   
+}
+
+footer > p > a{
+    margin: auto;
+    
+}
+
+#copy{
+    margin: auto;
+    text-align: center;
+    
+}
+
+footer > p, a{
+    color: #818181;
+}
+
+footer > p > a:hover{
+    color: #838383;
+    text-decoration: underline;
+}
+
+
+
