@@ -22,17 +22,17 @@
         <span id="or">OR</span>
         
 
-        <form action="" method="get">
+        <form action="cadastro.php" method="post" autocomplete="on">
             
-            <input class="texto" type="text" name="name" id="name" placeholder="Name">
+            <input class="texto" type="text" name="name" id="name" placeholder="Name" required minlength="5" >
             
-            <input class="texto" type="text" name="lastname" id="lastname" placeholder="Last name">
+            <input class="texto" type="text" name="lastname" id="lastname" placeholder="Last name" required minlength="3">
 
-            <input class="texto" type="text" name="username" id="username" placeholder="Username">
+            <input class="texto" type="text" name="username" id="username" placeholder="Username" required minlength="5">
 
-            <input class="texto" type="text" name="password" id="password" placeholder="Password">
+            <input class="texto" type="text" name="password" id="password" placeholder="Password" required minlength="8">
 
-            <p>People who use our service may have uploaded your contact information to Instagram. <a href="#">Learn More</a></p>
+            <p>People who use our service may have uploaded your contact information to Instagram.  <a href="#">Learn More</a></p>
 
             <p>By signing up, you agree to our <a href="">Terms</a> , <a href="">Privacy Policy</a> and <a href="">Cookies</a> <a href="">Policy</a> .</p>
             <input id="signup" type="submit" value="Sign up">
@@ -43,23 +43,24 @@
     </aside>
 
     <footer>
-        <p><a href="">Meta</a></p>
-        <p><a href="">About</a></p>
-        <p><a href="">Jobs</a></p>
-        <p><a href="">Help</a></p>
-        <p><a href="">API</a></p>
-        <p><a href="">Privacy</a></p>
-        <p><a href="">Top Accounts</a>
-        <p><a href="">Terms</a></p>
-        <p><a href="">Blog</a></p>
-        <p><a href="">Locations</a></p>
-        <p><a href="">Instagram Lite</a></p>
-        <p><a href="">Contact Uploading & Non-Users</a></p>
-        <p><a href="">Meta Verified</a></p>
-        <p><a href="">English</a></p>
-        <p>English © 2023 Instagram from Meta</p>
+        <div id="footercontent">
+            <ul type="none">
+                <li><a href="#">Meta</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Privacy</a></li>
 
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Locations</a></li>
 
+                <li><a href="#">English</a></li>
+            
+            </ul>
+        </div>
+        <div id="copy"><p>English © 2023 Instagram from Meta</p></div>
     </footer>
     
         

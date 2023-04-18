@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,9 +21,10 @@
 }
    
 html,body {
+    padding-top: 20px;
     display: grid;
     position: relative;
-    height: 100vh;
+    height: 96vh;
     width: 100vw;
     background-color: rgb(255, 255, 255);
     /* background-color: #8BC6EC;
@@ -31,7 +33,10 @@ html,body {
     background-size: cover; */
 }
 
+
+
 main{
+    
     position: relative;
     height: 610px;
     width: 350px;
@@ -164,7 +169,15 @@ input.texto{
     font-family: var(--font-escritas);
     font-weight: 300;
     color: black;
+    opacity: 100%;
     
+}
+
+input.texto::placeholder{
+    font-family: var(--font-escritas);
+   
+    opacity: 100%;
+
 }
 
 input.texto:active{
@@ -181,13 +194,13 @@ form > p{
     color: #818181;
 }
 
-a{
+form > p > a{
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: normal;
     color: rgb(0, 55, 107);
 }
 
-a:hover{
+form > p > a:hover{
     text-decoration: none;
     font-weight: bolder;
     color: rgb(7, 76, 141);
@@ -247,46 +260,48 @@ aside > p {
 
 aside > p > a{
     color: rgb(0, 123, 206);
+    text-decoration: none;
 }
 
 aside > p > a:hover{
     color: rgb(0, 123, 206);
+    text-decoration: none;
 }
 
 
 footer{
     padding: 100px 0 80px 0;
     justify-content: center ;
-    display: flex;
-    
+  
 }
 
-footer > p{
-    margin: 0 7px;
-    text-align: center;
-    font-size: 0.7em;
-   
-}
-
-footer > p > a{
+#footercontent {
+    width: 350px;
     margin: auto;
-    
 }
 
-#copy{
-    margin: auto;
-    text-align: center;
-    
-}
-
-footer > p, a{
+#footercontent  a{
     color: #818181;
+    margin: 15px;
+    text-decoration: none;
 }
 
-footer > p > a:hover{
+#footercontent > ul > li> a:hover{
     color: #838383;
     text-decoration: underline;
 }
 
+footer ul{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+#copy{
+    padding: 20px;
+    text-align: center;
+    color: #818181;
+    cursor: default;
+}
 
 
