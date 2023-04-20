@@ -25,15 +25,15 @@
         <span id="or">OR</span>
         
 
-        <form action="cadastro.php" method="post" autocomplete="on">
+        <form action="cadastro.php" method="post" autocomplete="off">
             
-            <input class="texto" type="text" name="name" id="name" placeholder="Name" required minlength="5" >
+            <input class="texto" type="text" name="name" id="name" placeholder="Name" required minlength="5" autocomplete="name">
             
-            <input class="texto" type="text" name="lastname" id="lastname" placeholder="Last name" required minlength="3">
+            <input class="texto" type="text" name="lastname" id="lastname" placeholder="Last name" required minlength="3" autocomplete="family-name">
 
-            <input class="texto" type="text" name="username" id="username" placeholder="Username" required minlength="5">
+            <input class="texto" type="text" name="username" id="username" placeholder="Username" required minlength="5" autocomplete="nickname">
 
-            <input class="texto" type="text" name="password" id="password" placeholder="Password" required minlength="8">
+            <input class="texto" type="text" name="password" id="password" placeholder="Password" required minlength="8" autocomplete="new-password">
 
             <p>People who use our service may have uploaded your contact information to Instagram.  <a href="#">Learn More</a></p>
 
